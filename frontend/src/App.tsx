@@ -65,6 +65,7 @@ function AppContent() {
               </ProtectedRoute>
             } 
           />
+          
         </Routes>
       </main>
     </BrowserRouter>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useNavigate, useNavigation } from 'react-router-dom';
 import { Card, CardBody, CardFooter, CardHeader, Chip, Pagination, Select, SelectItem } from '@nextui-org/react';
 import { Post } from '../services/apiService';
-import { Calendar, Clock, Tag } from 'lucide-react';
+import { Calendar, Clock, Tag, User } from 'lucide-react';
 import DOMPurify from 'dompurify';
 
 interface PostListProps {
@@ -124,8 +124,8 @@ const PostList: React.FC<PostListProps> = ({
                     <h2 className="text-xl font-bold text-left">
                       {post.title}
                     </h2>
-                    <p className="text-small text-default-500">
-                      by {post.author?.name}
+                    <p className="text-small text-default-500 flex">
+                     <User width={15} className='mx-2'/> by {post.author?.name}
                     </p>                
                     </div>
                 </CardHeader>

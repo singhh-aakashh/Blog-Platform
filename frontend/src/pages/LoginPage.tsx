@@ -28,7 +28,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50">
+    <div className="h-[80vh] flex items-center justify-center bg-gray-50">
       <div className="max-w-md w-full space-y-8">
         <div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
@@ -93,6 +93,12 @@ const LoginPage = () => {
             </button>
           </div>
         </form>
+        <div className='flex justify-center'>Didn't have an account? <button  className='cursor-pointer hover:underline ml-2'> create an account</button></div>
+        <div className='flex flex-col items-center space-y-2'>
+          <div>Use  these credentials.</div>
+          <div>Email : user@test.com</div>
+          <div>Password : password</div>
+        </div>
       </div>
     </div>
   );
